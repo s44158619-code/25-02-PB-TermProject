@@ -1,50 +1,29 @@
-# Welcome to your Expo app 👋
+# 📱 Attendance App (Mobile)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native (Expo)로 개발된 학생용 출석 체크 애플리케이션입니다.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 1. 설치 및 실행 (Setup)
 
 ```bash
-npm run reset-project
-```
+# 1. 의존성 패키지 설치
+npm install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# 2. Expo 서버 실행
+npx expo start
+2. 모바일 테스트 방법 (Testing)
+스마트폰에 Expo Go 애플리케이션을 설치합니다. (Play Store / App Store)
 
-## Learn more
+npx expo start 실행 후 나타나는 QR 코드를 스캔합니다.
 
-To learn more about developing your project with Expo, look at the following resources:
+Android: Expo Go 앱 내 'Scan QR Code' 사용
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+iOS: 기본 카메라 앱으로 QR 스캔
 
-## Join the community
+(연결 문제 발생 시) 같은 와이파이를 사용하거나, npx expo start --tunnel 명령어를 사용하세요.
 
-Join our community of developers creating universal apps.
+3. 기술 스택
+Framework: React Native, Expo
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Navigation: Expo Router / React Navigation
+
+Backend: Firebase SDK

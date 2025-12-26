@@ -10,3 +10,20 @@ npm install
 
 # 2. 로컬 서버 실행 (http://localhost:3000)
 npm start
+2. JCloud 배포용 빌드 (Production Build)
+JCloud(public_html)에 업로드하기 위한 정적 파일을 생성하는 방법입니다.
+
+Bash
+
+# 빌드 실행
+npm run build
+명령어가 완료되면 build 폴더가 생성됩니다.
+
+build 폴더 안의 모든 파일을 JCloud 서버에 업로드하면 배포가 완료됩니다.
+
+3. 기술 스택
+Framework: React.js
+
+Backend: Firebase (Firestore, Auth, Storage)
+
+Design: Styled-components / CSS Modules
